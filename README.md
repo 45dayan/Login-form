@@ -10,5 +10,10 @@ How it works:
 3. Used some js control statements and on the basis of that it validates and  renders a message  on web browser  based on specific condition once the button is clicked
 4. Requirements :
 
-Knowledge of html , css , js is necessary 
-Accessible on different devices 
+1. A good Knowledge of html , css , js is necessary 
+ 
+2. Accessible on different devices
+
+   Note : To validate this login page you can further check my javascript file and on the basis of given conditions there you can easily login
+   
+   On the basis of different conditions used it will render different message to the web browser provided by the given users
