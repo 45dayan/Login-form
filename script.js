@@ -1,27 +1,25 @@
 let username = document.querySelector("#username");
+let email = document.querySelector("#email");
 let password = document.querySelector("#password");
 let btn = document.querySelector("button");
-let message = document.querySelector("body");
+
 function Validate() {
     let uservalue = username.value.trim();
     let passvalue = password.value.trim();
+    let emailvalue = email.value.trim();
         
-     if(uservalue == "" && passvalue == ""){
-        console.log('All fields are mandatory');
-        message.innerText = 'Username and Password are mandatory ';
-        message.style.fontSize = '30px';
+     if(uservalue == "" && emailvalue == "" && passvalue == ""){
+       alert('All fields are mandatory');
+        
         
     }  else if((uservalue == 'helloworld' || uservalue == 'HELLOWORLD') && 
-        (passvalue == 'helloworld123' || passvalue  == 'HELLOWORLD123')){
-        console.log('Login successfull');
-        message.innerText = 'Login successfull✅';
-        message.style.color = 'green';
-        message.style.fontSize = '30px';
+    (emailvalue == "helloworld@gmail.com" || emailvalue == 'HELLOWORLD@GMAIL.COM') &&
+    (passvalue == 'helloworld123' || passvalue  == 'HELLOWORLD123')){
+        alert('Login successfull');
+       
 } else {
-        console.log('invalid details !');
-        message.innerText = 'Invalid credentials ❌';
-        message.style.color = 'red';
-        message.style.fontSize = '30px';
+        alert('invalid credentials!');
+        
     }
 
 }
